@@ -9,7 +9,7 @@ Faça um jogo para o usuário adivinhar qual a palavra secreta.
 
 serie = "supernatural";
 letrasAcertadas = '';
-quantidadeTentatidas = 0;
+quantidadeTentativas = 0;
 
 print("Desafio - Advinhe uma série misteriosa  \nDica: O melhor personagem morre por causa de um prego (: \n");
 
@@ -19,7 +19,7 @@ while True:
         print("Digite uma letra para continuar");
         continue; 
     
-    quantidadeTentatidas = quantidadeTentatidas + 1; 
+    quantidadeTentativas += 1; 
     if (letra in serie):
         print(f"A letra {letra} está na série secreta. Continue ...");
         letrasAcertadas += letra;
@@ -34,5 +34,5 @@ while True:
     print("\nPalavra formada: ", palavraFormada);
     
     if (palavraFormada == serie):
-       print("\nVocê acertou a série secreta com ", quantidadeTentatidas, " tentativas. Parabéns! \nSupernatual é a melhor série! :) ");
+       print("\nVocê acertou a série secreta com ", quantidadeTentativas, " tentativas. Parabéns! \nSupernatual é a melhor série! :) ");
        break;
