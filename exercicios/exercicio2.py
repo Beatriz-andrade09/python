@@ -34,6 +34,5 @@ while True:
     print("\nPalavra formada: ", palavraFormada);
     
     if (palavraFormada == serie):
-       letrasAcertadas = '';
        print("\nVocê acertou a série secreta com ", quantidadeTentatidas, " tentativas. Parabéns! \nSupernatual é a melhor série! :) ");
        break;
